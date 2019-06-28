@@ -10,4 +10,8 @@
   </div>
 </BookEntry>
 
+<div class="fixed pin-t pin-r py-2 px-4">
+  <button {{on "click" (fn this.refresh)}} class="text-grey border border-grey rounded py-2 px-4">Reload</button>
+</div>
+
 {{outlet}}

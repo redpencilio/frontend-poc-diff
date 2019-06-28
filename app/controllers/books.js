@@ -27,6 +27,11 @@ export default class BooksController extends Controller {
     book.set('title', bookData.title );
     await book.save();
     this.initBookEntry();
+    this.refresh();
+  }
+
+  @action
+  refresh(){
     this.send("refreshModel");
   }
 }
