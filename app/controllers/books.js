@@ -1,4 +1,3 @@
-import { get } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
 import { inject as service } from '@ember/service';
 import EmberObject from '@ember/object';
