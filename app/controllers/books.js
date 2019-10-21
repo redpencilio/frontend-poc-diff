@@ -15,9 +15,9 @@ export default class BooksController extends Controller {
   @service store
 
   @action
-  removeBook( book ){
+  async removeBook( book ){
     book.deleteRecord();
-    book.save();
+    await book.save();
   }
 
   @action
