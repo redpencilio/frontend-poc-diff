@@ -1,7 +1,6 @@
 import { tracked } from '@glimmer/tracking';
 import { inject as service } from '@ember/service';
-import EmberObject from '@ember/object';
-import { action } from '@ember/object';
+import EmberObject, { action } from '@ember/object';
 import Controller from '@ember/controller';
 
 export default class BooksController extends Controller {
